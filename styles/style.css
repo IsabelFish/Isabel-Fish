@@ -1,0 +1,328 @@
+:root {
+    --main-black: #0b0b0c;
+    --main-white: #ffffff;
+    --main-colour: #bf92ff;
+}
+
+@keyframes flower1 {
+  0% {
+     transform: rotate(0deg);
+    }
+        
+  100% {
+     transform: rotate(360deg);
+    }
+}
+
+@keyframes flower2 {
+   0% {
+     transform: rotate(0deg);
+    }
+          
+    100% {
+     transform: rotate(-360deg);
+    }
+}
+
+@keyframes flower3 {
+    0% {
+      transform: rotate(0deg);
+    }
+           
+    100% {
+      transform: rotate(360deg);
+    }
+ }
+
+ @keyframes flower4 {
+    0% {
+      transform: rotate(0deg);
+    }
+           
+    100% {
+      transform: rotate(-360deg);
+     }
+ }
+  
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: url("") black repeat;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: white;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+a:link { 
+    text-decoration: none; 
+} 
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: linear-gradient(rgba(20, 20, 20,0.9) 0%, rgba(0,0,0,0.0) 100%);
+    width: 100vw;
+    height: 250px;
+    pointer-events:none;
+}
+
+.info {
+    position: fixed;
+    z-index: 4;
+
+    font-family: "lores-21-serif", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    color: var(--main-colour);
+    pointer-events:all!important;
+    pointer-events:none;
+}
+
+#me {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    pointer-events:none;
+}
+
+#memail {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35px;
+    font-size: 20px;
+    pointer-events:none;
+}
+
+/* flowerr */
+
+.nav {
+    position: absolute;
+    top: -110px;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transform: scale(95%);
+
+}
+
+.full-flower {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+}
+
+/* head positioning ?????? */
+
+#flower1 {
+    position: absolute;
+    margin-bottom: 890px;
+    margin-left: 360px;
+}
+
+#flower2 {
+    position: absolute;
+    margin-top: -50px;
+    margin-right: 405px;
+}
+
+#flower3 {
+    position: absolute;
+    margin-top: 210px;
+    margin-right: 541px;
+}
+
+#flower4 {
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 100px;
+}
+
+/* name */ 
+.flowerhead-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.nav-button {
+    z-index: 3;
+    border-radius: 100px;
+    color: var(--main-white);
+    
+    text-align: center;
+    font-family: "forma-djr-mono", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+#link1 {
+    position: relative;
+    top: 230px;
+    right: 90px;
+}
+
+#link2 {
+    position: relative;
+    top: 450px;
+    left: 415px;
+}
+
+#link3 {
+    position: relative;
+    top: 350px;
+    left: 260px;
+}
+
+#link4 {
+    position: relative;
+    top: 170px;
+    left: 250px;
+}
+
+/* so head */
+
+.flower-head {
+    z-index: 2;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+#head1 {
+    position: fixed;
+    border-radius: 100px;
+
+    animation-name: flower1;
+    animation-duration: 55s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#head2 {
+    position: fixed;
+
+    animation-name: flower2;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#head3 {
+    position: fixed;
+
+    animation-name: flower3;
+    animation-duration: 45s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#head4 {
+    position: fixed;
+
+
+    animation-name: flower4;
+    animation-duration: 65s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+#head1:hover {
+    filter: invert(20%) sepia(64%) saturate(4384%) hue-rotate(334deg) brightness(86%) contrast(97%);
+}
+
+#head2:hover {
+    filter: invert(30%) sepia(48%) saturate(6220%) hue-rotate(12deg) brightness(98%) contrast(101%);
+}
+
+#head3:hover {
+    filter: invert(46%) sepia(94%) saturate(408%) hue-rotate(21deg) brightness(96%) contrast(97%);
+}
+
+#head4:hover {
+    filter: invert(60%) sepia(65%) saturate(6550%) hue-rotate(250deg) brightness(101%) contrast(90%);
+}
+
+/* stalk */
+
+.flowerhead-link:hover + .flower-stalk {
+   
+filter: brightness(0) saturate(100%) invert(33%) sepia(15%) saturate(1506%) hue-rotate(92deg) brightness(92%) contrast(91%);
+}
+
+.flower-stalk {
+    z-index: 1;
+    pointer-events: none;
+}
+
+#stalk1 {
+    position: relative;
+    height: auto;
+    width: 530px;
+}
+
+#stalk2 {
+    position: relative;
+    height: 400px;
+    width: auto;
+}
+
+#stalk3 {
+    position: relative;
+    height: 550px;
+    width: auto;
+}
+
+#stalk4 {
+    position: relative;
+    height: 350px;
+    width: auto;
+}
+
+.footertext {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    top: 65%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(rgba(0,0,0,0.0) 50%,rgba(20, 20, 20,0.9) 100%);
+    z-index: 999;
+    pointer-events:none;
+}
+
+@media (max-width: 600px) and (max-height: 860px) {
+    .nav {
+        transform: scale(80%);
+        top: -140px;
+    }
+}
