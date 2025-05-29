@@ -385,7 +385,7 @@ button {
 
     position: relative;
     width: auto;
-    height: auto;
+    height: fit-content;
     margin-bottom: 10px;
     flex-grow: 1;
 }
