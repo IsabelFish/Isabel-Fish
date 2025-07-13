@@ -2,6 +2,7 @@
     --main-black: #000000;
     --main-white: #ffffff;
     --main-colour: #bf92ff;
+    --hover-colour: #0026ff;
 
     --radius: 15px;
 }
@@ -28,6 +29,7 @@ body {
     margin: 0;
     background: url("/mainImg/background.jpg") var(--main-black) fixed;
     background-size:cover;
+    /* background-position: center; */
     color: var(--main-white);
 }
 
@@ -38,11 +40,11 @@ a {
 
 p {
     position: relative;
-    font-family: "forma-djr-mono", sans-serif;
+    font-family: "Spline Sans Mono", sans-serif;
     margin: 0;
 
     font-size: 10pt;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 19px;
 }
 
@@ -51,8 +53,8 @@ p {
 }
 
 .link {
-    font-family: "forma-djr-mono", sans-serif;
-    font-weight: 500;
+    font-family: "Spline Sans Mono", sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 13px;
     text-transform: uppercase;
@@ -195,10 +197,11 @@ ul {
 }
 
 #name {
-    font-family: "lores-21-serif", sans-serif;
+    font-family: "Jacquard 24", sans-serif;
     font-weight: 400;
     font-style: normal;  
-    font-size: 33px;  
+    font-size: 38px; 
+    white-space: nowrap; 
 
     position: relative;
     left: 2px;
@@ -206,6 +209,7 @@ ul {
     display: inline-block;
     align-self: center;
     transform: rotate(-90deg);
+    transition: color 0.2s;
 
     cursor: pointer;
     -webkit-user-select: none;
@@ -214,7 +218,8 @@ ul {
 }
 
 #name:hover {
-    color: rgb(0, 21, 255);
+    transition: color 1s;
+    color: var(--hover-colour);
 }
 
 /* flower */
@@ -312,7 +317,7 @@ button {
     height: fit-content; 
     margin: 0 40px;
 
-    font-family: "forma-djr-mono", sans-serif;
+    font-family: "Spline Sans Mono", sans-serif;
     color: var(--main-white);
 }
 
@@ -321,28 +326,28 @@ button {
     margin-bottom: 5px;
 
     font-size: 12pt;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 16px;
 }
 
 .projectTitle {
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 
     font-size: 25pt;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     line-height: 37px;
 }
 
 .descLink {
-    font-family: "forma-djr-mono", sans-serif;
-    font-weight: 500;
+    font-family: "Spline Sans Mono", sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 13px;
     text-transform: uppercase;
     color: var(--main-colour); 
-    bottom: 12.5px;
+    bottom: 20px;
     position: relative;
 
     cursor: pointer;
@@ -353,25 +358,25 @@ button {
 }
 
 .projectMedium {
-    font-family: "forma-djr-mono", sans-serif;
-    font-weight: 500;
+    font-family: "Spline Sans Mono", sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 13px;
     text-transform: uppercase;
     color: grey;
     position: relative; 
-    bottom: 10px;
+    bottom: 27px;
 
     cursor: pointer;
 }
 
 .projectDesc {
     position: relative;
-    font-family: "forma-djr-mono", sans-serif;
+    font-family: "Spline Sans Mono", sans-serif;
     margin: auto;
 
     font-size: 10pt;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 19px;
 }
 
@@ -457,16 +462,16 @@ button {
 
 .miscDesc {
     margin: 0;
-    font-family: "forma-djr-mono", sans-serif;
-    font-weight: 500;
+    font-family: "Spline Sans Mono", sans-serif;
+    font-weight: 300;
     font-style: normal;
     font-size: 13px;
     text-transform: uppercase;
 }
 
 .miscLink {
-    font-family: "forma-djr-mono", sans-serif;
-    font-weight: 500;
+    font-family: "Spline Sans Mono", sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 13px;
     text-transform: uppercase;
@@ -498,10 +503,10 @@ button {
     max-width: 330px;
     width: 100%;
 
-    font-family: "forma-djr-mono", sans-serif;
+    font-family: "Spline Sans Mono", sans-serif;
 
     font-size: 10pt;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 19px;
 }
 
@@ -582,7 +587,7 @@ button {
     }
 
     #name {
-        font-size: 23px;  
+        font-size: 27px;  
     }
 
     #website-title {
