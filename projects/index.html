@@ -6,7 +6,7 @@
         <meta name="description" content="Isabel Fish. Graphic Design, Illustration, etc. Find my portfolio projects here!"> 
         <title>isabel.fish</title>
         <link rel="icon" type="image/gif/png" href="">
-        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/main.css?v=1">
 
         <!-- Adobe fonts (Lo-res 21, Forma Djr ---- NOT ACTIVE! ---- )-->
         <!-- <link rel="stylesheet" href="https://use.typekit.net/rbn2tqu.css"> -->
@@ -40,7 +40,30 @@
                </div>
             </header>
             <div id="page-nav">
-                <ul>
+                <button onclick="indexFunction()" class="indexNav link page-nav-item"><i id="indexChevron" class="fa-solid fa-chevron-down"></i> Index </button>
+                <div id="indexClick">
+                <div id="indexNav">
+                   <ul class="listContainer">
+                        <li id="indexNavItem">
+                            <a id="projects" class="index-button current-menu link" href="#horseProject" >The art of interacting incorrectly</a>
+                        </li>
+                        <li id="indexNavItem">
+                            <a id="projects" class="index-button current-menu link" href="#noiseProject" >What's All That Noise?</a>
+                        </li>
+                        <li id="indexNavItem">
+                            <a id="projects" class="index-button current-menu link" href="#imperfectProject" >Creating Imperfection</a>
+                        </li>
+                        <li id="indexNavItem">
+                            <a id="projects" class="index-button current-menu link" href="#ppPosterProject" >Professional Practice Posters</a>
+                        </li>
+                        <li id="indexNavItem">
+                            <a id="projects" class="index-button current-menu link" href="#pavilionProject" >An Observer's View of the Royal Pavilion</a>
+                        </li>
+                   </ul>
+                </div>
+               </div>
+                <!-- nuh uh (old year nav)
+                 <ul>
                     <li class="page-nav-item">
                         <a href="#2025" class="page-nav-link link pageNav25"><span class="hide">20</span>25</a>
                     </li>
@@ -53,7 +76,8 @@
                     <li class="page-nav-item">
                         <a href="#2022" class="page-nav-link link pageNav25"><span class="hide">20</span>22</a>
                     </li>
-                </ul>
+                </ul> 
+                -->
             </div>
             <div id="website-title">
                 <a id="name" href="/">isabel fish</a>
@@ -63,7 +87,7 @@
             </button>
             <div id="content-div">
                 <div id="content">
-                    <div id="2025"></div>
+                    <div id="horseProject"></div>
                     <section class="project project3 2025">
                         <section class="projectText">
                             <h2 class="projectDate">2025</h2>
@@ -94,7 +118,7 @@
                             <img class="imgLayout noiseImg" src="projectImg/horse/horseImg.jpg" alt="">
                         </section>
                     </section>
-                    <div id="2024"></div>
+                    <div id="noiseProject"></div>
                     <section class="project project2 2024">
                         <section class="projectText">
                             <h2 class="projectDate">2024/2025</h2>
@@ -122,6 +146,7 @@
                             </video>
                         </section>
                     </section>
+                    <div id="imperfectProject"></div>
                     <section class="project project1 2023">
                         <section class="projectText">
                             <h2 class="projectDate">2024</h2>
@@ -140,7 +165,7 @@
                             </video>
                         </section>
                     </section>
-                    <div id="2023"></div>
+                    <div id="ppPosterProject"></div>
                     <section class="project project1 2022">
                         <section class="projectText">
                             <h2 class="projectDate">2022/2023</h2>
@@ -161,7 +186,7 @@
                             <img loading="lazy" class="imgLayout ppPosterImg" src="projectImg/ppPosters/jpg/gregPoster.jpg" alt="">
                         </section>
                     </section>
-                    <div id="2022"></div>
+                    <div id="pavilionProject"></div>
                     <section class="project project1 2022">
                         <section class="projectText">
                             <h2 class="projectDate">2022</h2>
@@ -182,5 +207,5 @@
         </div>
         <div id="blackBg"></div>
     </body>
-    <script src="/js/scripts.js" defer></script> 
+    <script src="/js/scripts.js?v=1" defer></script> 
 </html>

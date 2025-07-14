@@ -48,6 +48,12 @@ p {
     line-height: 19px;
 }
 
+ul {
+    margin: 15px 15px 15px 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
 .italic {
     font-style: italic;
 }
@@ -120,6 +126,8 @@ p {
     padding: 0 30px;
 }
 
+/* hidden nav */
+
 #menuClick {
     display: none;
     position: absolute;
@@ -163,10 +171,14 @@ p {
 
     background-color: var(--main-black);
     border-radius: var(--radius) 0 0 var(--radius);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-ul {
-    margin: 15px 15px 15px 20px;
+.socialAll {
+    margin: 23px 15px 23px 20px;
     padding: 0;
     list-style-type: none;
 }
@@ -178,10 +190,64 @@ ul {
 
 .social {
     font-size: 20pt;
-    margin-top: 30px;
-    line-height: 45px;
+    margin: 0px;
+    line-height: 0px;
 
 }
+
+/* NEW INDEX NAV */
+
+.indexNav {
+    color: var(--main-colour);
+    transform: rotate(-90deg);
+    position: relative;
+    margin: 50px 0 43px 0;
+    display: inline-block;
+    align-self: center;
+    text-wrap: nowrap;
+}
+
+#indexClick {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    height: fit-content;
+    width: 165px;
+    background-color: var(--hover-colour);
+    border-radius:  0 var(--radius) var(--radius) 0;
+    z-index: 5;
+}
+
+ul {
+    height: 100%;
+    width: calc(100%-20px);
+    
+    padding: 10px 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 15px;
+
+}
+
+#indexNavItem {
+  list-style-type: "✷";
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
+#indexChevron {
+    transition: 0.1s;
+}
+
+.index-button {
+    padding: 3px 0;
+}
+
 
 /* web title */
 #website-title {
@@ -453,6 +519,7 @@ button {
 
 
 /***Misc Page Content***/
+
 #text-images {
     position: absolute;
     margin: 0;
@@ -573,6 +640,15 @@ button {
         grid-template-rows: 50px auto auto 1fr auto;
    }
 
+   .indexNav {
+        margin: 50px 0 43px 10px;
+    }
+
+    #indexClick {
+        left: 35px;
+    
+    }
+
     .hide {
         display: none;
     }
@@ -594,11 +670,16 @@ button {
         height: 130px;
     }
 
+    .socialAll {
+        margin: 15px 15px 15px 20px;
+        padding: 0;
+        list-style-type: none;
+    }
+
     .social {
         font-size: 15pt;
-        margin-top: 0px;
-        margin-left: -5px;
-        line-height: 25px;
+        margin-left: 5px;
+        line-height: 0px;
     }
 
     #flower-button-img {

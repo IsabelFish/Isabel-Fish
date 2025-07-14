@@ -1,3 +1,6 @@
+////////// background
+// should do a 1 in 100 chance of it being something else maybe
+
 myFunction();
 
 function myFunction() {
@@ -9,28 +12,61 @@ function myFunction() {
     }
 } 
 
+///////// menus
 
 const menu = document.getElementById("menuClick");
+const index = document.getElementById("indexClick");
+const chevron = document.getElementById("indexChevron");
 
-  function ourFunction() {
-    if (menu.style.display === "none" || menu.style.display === "") {
-      menu.style.display = "block";
-    } else {
-      menu.style.display = "none";
-    }
+// Toggle menu
+function ourFunction() {
+  // Close index if open
+  if (index) index.style.display = "none";
+  if (chevron) chevron.style.rotate = "0deg";
+
+  if (menu.style.display === "none" || menu.style.display === "") {
+    menu.style.display = "block";
+  } else {
+    menu.style.display = "none";
   }
+}
 
-  // Hide menu when clicking outside of it
-  document.addEventListener("click", function(event) {
-    const isClickInside = menu.contains(event.target);
-    const isToggleButton = event.target.closest("button");
+// Toggle index
+function indexFunction() {
+  // Close menu if open
+  menu.style.display = "none";
 
-    if (!isClickInside && !isToggleButton) {
-      menu.style.display = "none";
-    }
-  });
+  if (!index) return;
 
-  // Prevent clicks inside the menu from triggering document click
-  menu.addEventListener("click", function(event) {
+  if (index.style.display === "none" || index.style.display === "") {
+    index.style.display = "block";
+    if (chevron) chevron.style.rotate = "180deg";
+  } else {
+    index.style.display = "none";
+    if (chevron) chevron.style.rotate = "0deg";
+  }
+}
+
+// Unified click listener
+document.addEventListener("click", function(event) {
+  const isClickInsideMenu = menu.contains(event.target);
+  const isClickInsideIndex = index && index.contains(event.target);
+  const isToggleButton = event.target.closest("button");
+
+  if (!isClickInsideMenu && !isClickInsideIndex && !isToggleButton) {
+    menu.style.display = "none";
+    if (index) index.style.display = "none";
+    if (chevron) chevron.style.rotate = "0deg";
+  }
+});
+
+// Prevent clicks inside each from propagating
+menu.addEventListener("click", function(event) {
+  event.stopPropagation();
+});
+
+if (index) {
+  index.addEventListener("click", function(event) {
     event.stopPropagation();
   });
+}

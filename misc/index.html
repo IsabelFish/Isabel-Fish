@@ -6,7 +6,7 @@
         <meta name="description" content="Isabel Fish. Graphic Design, Illustration, etc. Find various things that I've made here!"> 
         <title>isabel.fish</title>
         <link rel="icon" type="image/gif/png" href="">
-        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/main.css?v=1">
 
         <!-- Adobe fonts (Lo-res 21, Forma Djr ---- NOT ACTIVE! ---- )-->
         <!-- <link rel="stylesheet" href="https://use.typekit.net/rbn2tqu.css"> -->
@@ -39,7 +39,30 @@
                </div>
             </header>
             <div id="page-nav">
-                <ul>
+                <button onclick="indexFunction()" class="indexNav link page-nav-item"><i id="indexChevron" class="fa-solid fa-chevron-down"></i> Filter</button>
+                <div id="indexClick">
+                <div id="indexNav">
+                   <ul class="listContainer">
+                        <li id="indexNavItem">
+                            <a id="projects" class="index-button current-menu link" href="#" >Nothing</a>
+                        </li>
+                        <li id="indexNavItem">
+                            <a id="projects" class="index-button current-menu link" href="#" >To</a>
+                        </li>
+                        <li id="indexNavItem">
+                            <a id="projects" class="index-button current-menu link" href="#" >See</a>
+                        </li>
+                        <li id="indexNavItem">
+                            <a id="projects" class="index-button current-menu link" href="#" >Here</a>
+                        </li>
+                        <li id="indexNavItem">
+                            <a id="projects" class="index-button current-menu link" href="#" >Yet</a>
+                        </li>
+                   </ul>
+                </div>
+               </div>
+                <!-- nuh uh (old year nav)
+                 <ul>
                     <li class="page-nav-item">
                         <a href="#2025" class="page-nav-link link pageNav25"><span class="hide">20</span>25</a>
                     </li>
@@ -52,7 +75,8 @@
                     <li class="page-nav-item">
                         <a href="#2022" class="page-nav-link link pageNav25"><span class="hide">20</span>22</a>
                     </li>
-                </ul>
+                </ul> 
+                -->
             </div>
             <div id="website-title">
                 <a id="name" href="/">isabel fish</a>
@@ -72,5 +96,5 @@
         </div>
         <div id="blackBg"></div>
     </body>
-    <script src="/js/scripts.js" defer></script>
+    <script src="/js/scripts.js?v=1" defer></script>
 </html>
