@@ -5,6 +5,7 @@
     --hover-colour: #0026ff;
 
     --radius: 15px;
+    --body-text: 9.5pt;
 }
 
 @keyframes flower {
@@ -31,6 +32,7 @@ body {
     background-size:cover;
     /* background-position: center; */
     color: var(--main-white);
+    overflow-x: hidden;
 }
 
 a {
@@ -43,7 +45,7 @@ p {
     font-family: "Spline Sans Mono", sans-serif;
     margin: 0;
 
-    font-size: 10pt;
+    font-size: var(--body-text);
     font-weight: 300;
     line-height: 19px;
 }
@@ -255,10 +257,11 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 180px;
+
 
     grid-row-start: 3;
-    background-color: var(--main-colour);
+    background-color: var(--main-black);
     border-radius: var(--radius) 0 0 var(--radius);
 }
 
@@ -266,7 +269,7 @@ ul {
     font-family: "Jacquard 24", sans-serif;
     font-weight: 400;
     font-style: normal;  
-    font-size: 38px; 
+    font-size: 50px; 
     white-space: nowrap; 
 
     position: relative;
@@ -286,6 +289,17 @@ ul {
 #name:hover {
     transition: color 1s;
     color: var(--hover-colour);
+}
+
+#nameGIF {
+    transform: rotate(-90deg);
+    width: 140px;
+    margin-left: 5px;
+    filter: brightness(0) saturate(100%) invert(67%) sepia(62%) saturate(2642%) hue-rotate(213deg) brightness(101%) contrast(105%);
+}
+
+#nameGIF:hover {
+    filter: brightness(0) saturate(100%) invert(56%) sepia(0%) saturate(313%) hue-rotate(204deg) brightness(90%) contrast(89%);
 }
 
 /* flower */
@@ -400,10 +414,10 @@ button {
     margin: auto;
     margin-bottom: 30px;
 
-    font-size: 25pt;
+    font-size: 20pt;
     font-weight: 400;
     text-transform: uppercase;
-    line-height: 37px;
+    line-height: 30px;
 }
 
 .descLink {
@@ -441,7 +455,7 @@ button {
     font-family: "Spline Sans Mono", sans-serif;
     margin: auto;
 
-    font-size: 10pt;
+    font-size: var(--body-text);
     font-weight: 300;
     line-height: 19px;
 }
@@ -519,6 +533,133 @@ button {
 
 
 /***Misc Page Content***/
+.thumbs {
+    margin: 0;
+    padding-right: 15px; 
+    position: relative;
+    height: 100%;
+    width: 175px;
+
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbImg {
+    position: relative;
+    background-color: pink;
+
+    padding: 0;
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+
+    -webkit-user-drag: none;
+    user-select: none;
+    display: block;
+}
+
+.thumb {
+    position: relative; 
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.infoOverlay {
+    position: absolute;
+    bottom: 10px;   
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    margin: 0;
+    padding: 0.5em;
+    font-size: 0.9em;
+    display: none;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.infoOverlay.active {
+    display: block;
+}
+
+.infoOverlay a {
+    display: block;           
+    font-family: "Spline Sans Mono", sans-serif;
+    font-size: 0.9em;
+    padding-top: 3px;    
+    color: #fff;       
+    text-decoration: underline;
+}
+
+.preview {
+    position: absolute; 
+    top: 0;
+    margin: 0; 
+    padding-left: 25px;
+    left: 175px;
+    width: calc(100% - 175px);
+    height: 100%;
+    overflow: hidden;
+    font-family: "Spline Sans Mono", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.caption {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#projectLink {
+    position: relative;
+    font-family: "Spline Sans Mono", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--main-colour); 
+    top: 0px;
+    margin-bottom: 10px;
+
+    cursor: pointer;
+}
+
+#projectLink:hover {
+    color: grey; 
+}
+
+#bigImage {
+    position: relative;
+    width: auto; 
+    max-width: 100%;
+    height: auto; 
+    max-height: calc(100% - 63px);
+    object-fit: contain;
+    object-position: left top;
+}
+
+#bigVideo {
+    position: relative;
+    margin: 0; 
+    width: auto; 
+    max-width: 100%;
+    height: auto; 
+    max-height: calc(100% - 70px);
+    object-fit: contain;
+    object-position: left top;
+}
+
 
 #text-images {
     position: absolute;
@@ -572,7 +713,7 @@ button {
 
     font-family: "Spline Sans Mono", sans-serif;
 
-    font-size: 10pt;
+    font-size: var(--body-text);
     font-weight: 300;
     line-height: 19px;
 }
@@ -600,7 +741,7 @@ button {
     }
 
     .projectDate {
-        font-size: 10pt;
+        font-size: var(--body-text);
         line-height: 16px;
     }
     
@@ -610,7 +751,7 @@ button {
     }
     
     .projectDesc {
-        font-size: 10pt;
+        font-size: var(--body-text);
         line-height: 18px;
         bottom: 10px;
     }
@@ -666,8 +807,13 @@ button {
         font-size: 27px;  
     }
 
+    #nameGIF {
+        margin-left: 10px;
+        width: 90px;
+    }
+
     #website-title {
-        height: 130px;
+        height: 125px;
     }
 
     .socialAll {
@@ -728,4 +874,32 @@ button {
     #menuClick {
         display: none;
     }
+}
+
+@media (min-width: 769px) {
+  .infoOverlay {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+    .preview {
+        display: none;
+    }
+
+    .thumb img {
+       width: 100%;   /* mobile: all same size */
+       height: auto;
+    }
+
+    .thumbs {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .thumbImg {
+        width: 100%;
+
+    }
+    
 }

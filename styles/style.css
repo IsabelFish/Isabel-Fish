@@ -78,8 +78,8 @@ header {
     position: fixed;
     z-index: 4;
 
-    font-family: "Jacquard 24", sans-serif;
-    font-weight: 500;
+    font-family: "Spline Sans Mono", sans-serif;
+    font-weight: 300;
     font-style: italic;
     font-size: 40px;
     text-align: center;
@@ -97,11 +97,22 @@ header {
     text-wrap: nowrap;
 }
 
+#meGIF {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15px;
+    pointer-events:none;
+    text-wrap: nowrap;
+    width: 200px;
+    filter: brightness(0) saturate(100%) invert(67%) sepia(62%) saturate(2642%) hue-rotate(213deg) brightness(101%) contrast(105%);
+}
+
 #memail {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    top: 50px;
+    top: 55px;
     font-size: 20px;
     pointer-events:none;
 }
@@ -307,8 +318,8 @@ filter: brightness(0) saturate(100%) invert(33%) sepia(15%) saturate(1506%) hue-
 .footertext {
     position: relative;
     text-align: center;
-    font-size: 20px;
-    top: 65%;
+    font-size: 15px;
+    top: 70%;
 }
 
 footer {

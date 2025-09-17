@@ -6,7 +6,7 @@
         <meta name="description" content="Isabel Fish. Graphic Design, Illustration, etc. Find various things that I've made here!"> 
         <title>isabel.fish</title>
         <link rel="icon" type="image/gif/png" href="">
-        <link rel="stylesheet" href="/styles/main.css?v=1">
+        <link rel="stylesheet" href="/styles/main.css?v=2">
 
         <!-- Adobe fonts (Lo-res 21, Forma Djr ---- NOT ACTIVE! ---- )-->
         <!-- <link rel="stylesheet" href="https://use.typekit.net/rbn2tqu.css"> -->
@@ -44,53 +44,307 @@
                 <div id="indexNav">
                    <ul class="listContainer">
                         <li id="indexNavItem">
-                            <a id="projects" class="index-button current-menu link" href="#" >Nothing</a>
+                            <button data-filter="all" class="index-button current-menu link" >All</button>
                         </li>
                         <li id="indexNavItem">
-                            <a id="projects" class="index-button current-menu link" href="#" >To</a>
+                            <button data-filter="digital" class="index-button current-menu link" >Digital</button>
                         </li>
                         <li id="indexNavItem">
-                            <a id="projects" class="index-button current-menu link" href="#" >See</a>
+                            <button data-filter="web" class="index-button current-menu link" >Web</button>
                         </li>
                         <li id="indexNavItem">
-                            <a id="projects" class="index-button current-menu link" href="#" >Here</a>
+                            <button data-filter="figure" class="index-button current-menu link" >Figure Drawing</button>
                         </li>
-                        <li id="indexNavItem">
-                            <a id="projects" class="index-button current-menu link" href="#" >Yet</a>
-                        </li>
+                        <!-- <li id="indexNavItem">
+                            <button data-filter="" class="index-button current-menu link" >...P</button>
+                        </li> -->
                    </ul>
                 </div>
                </div>
-                <!-- nuh uh (old year nav)
-                 <ul>
-                    <li class="page-nav-item">
-                        <a href="#2025" class="page-nav-link link pageNav25"><span class="hide">20</span>25</a>
-                    </li>
-                    <li class="page-nav-item">
-                        <a href="#2024" class="page-nav-link link pageNav24"><span class="hide">20</span>24</a>
-                    </li>
-                    <li class="page-nav-item">
-                        <a href="#2023" class="page-nav-link link pageNav23"><span class="hide">20</span>23</a>
-                    </li>
-                    <li class="page-nav-item">
-                        <a href="#2022" class="page-nav-link link pageNav25"><span class="hide">20</span>22</a>
-                    </li>
-                </ul> 
-                -->
             </div>
             <div id="website-title">
-                <a id="name" href="/">isabel fish</a>
+                <!-- <a id="name" href="/">isabel fish</a> -->
+                <a href="/">
+                  <img id="nameGIF" src="/mainImg/nameGIF.gif"/>
+                </a>
             </div>
             <button id="flower-button" onclick="myFunction()">
                 <img id="flower-button-img" src="/flower svg/SVG/SVG/Asset 18Flower.svg">
             </button>
             <div id="content-div">
-                <div id="content">
-                    <div id="text-images">
+                <div id="content" class="gallery">
+                    <div class="thumbs">
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/gargBW.jpg"
+                            data-full="miscImg/large/mbPortgargBW.jpg"
+                            data-type="image"
+                            data-caption="2025 - Digital Illustration"
+                            data-link=""
+                            data-categories="all digital"
+                            alt=""
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/gargColour.jpg"
+                            data-full="miscImg/large/mbPortgargColour.jpg"
+                            data-type="image"
+                            data-caption="2025 - Digital Illustration"
+                            data-link=""
+                            data-categories="all digital"
+                            alt=""
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/handFace.jpg"
+                            data-full="miscImg/large/mbPorthandFace.jpg"
+                            data-type="image"
+                            data-caption="2025 - Ink drawing, coloured digitally"
+                            data-link=""
+                            data-categories="all digital"
+                            alt=""
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/gargCurl.jpg"
+                            data-full="miscImg/large/mbPortgargCurl.jpg"
+                            data-caption="2025 - Digital Illustration"
+                            data-link=""
+                            data-categories="all digital"
+                            alt=""
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/gargFace.jpg"
+                            data-full="miscImg/large/mbPortgargFace.jpg"
+                            data-caption="2025 - Digital Illustration"
+                            data-link=""
+                            data-categories="all digital"
+                            alt=""
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/skull.jpg"
+                            data-full="miscImg/large/mbPortskull.jpg"
+                            data-caption="2025 - Digital Illustration"
+                            data-link=""
+                            data-categories="all digital"
+                            alt=""
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/bob.jpg"
+                            data-full="miscImg/large/mbPortbob.jpg"
+                            data-caption="2024 - Digital Illustration"
+                            data-link=""
+                            data-categories="all digital"
+                            alt=""
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/erikCarter.jpg"
+                            data-full="miscImg/large/mbPorterikCarter.jpg"
+                            data-caption="2024 - Interview With Erik Carter"
+                            data-link="https://isabelfish.github.io/Interview-Project/"
+                            data-categories="all digital web"
+                            alt=""
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/window.jpg"
+                            data-full="miscImg/large/mbPortwindow.jpg"
+                            data-caption="2024 - Digital Illustration"
+                            data-link=""
+                            data-categories="all digital"
+                            alt=""
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/sadFace.jpg"
+                            data-full="miscImg/large/mbPortsadFace.jpg"
+                            data-caption="2024 - Pen Illustration, Coloured Digitally"
+                            data-link=""
+                            data-categories="all digital"
+                            alt=""
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/leafFace.jpg"
+                            data-full="miscImg/large/mbPortleafFace.jpg"
+                            data-caption="2024 - Digital Illustration"
+                            data-link=""
+                            data-categories="all digital"
+                            alt=""
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/mouth.jpg"
+                            data-full="miscImg/large/mbPortmouth.jpg"
+                            data-caption="2024 - Pen Illustration, Coloured Digitally"
+                            data-link=""
+                            data-categories="all digital"
+                            alt=""
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/flower.jpg"
+                            data-full="miscImg/large/mbPortflower.jpg"
+                            data-caption="2024 - Pen and Pencil Illustration, Digitally Edited"
+                            data-link=""
+                            data-categories="all digital"
+                            alt="Image 1"
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/glow.jpg"
+                            data-full="miscImg/large/mbPortglow.jpg"
+                            data-caption="2024 - Digital Illustration"
+                            data-link=""
+                            data-categories="all digital"
+                            alt="Image 1"
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/flowers.jpg"
+                            data-full="miscImg/large/flowers.png"
+                            data-caption="2024 - Pen Illustration, Coloured Digitally"
+                            data-link=""
+                            data-categories="all digital"
+                            alt="Image 1"
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/collage1.jpg"
+                            data-full="miscImg/large/mbPortcollage1.jpg"
+                            data-caption="2024 - Digital Collage"
+                            data-link=""
+                            data-categories="all digital"
+                            alt="Image 1"
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/collage2.jpg"
+                            data-full="miscImg/large/mbPortcollage2.jpg"
+                            data-caption="2024 - Digital Collage"
+                            data-link=""
+                            data-categories="all digital"
+                            alt="Image 1"
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/collage3.jpg"
+                            data-full="miscImg/large/mbPortcollage3.jpg"
+                            data-caption="2024 - Digital Collage"
+                            data-link=""
+                            data-categories="all digital"
+                            alt="Image 1"
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/figure3.jpg"
+                            data-full="miscImg/large/mbPortfigure3.jpg"
+                            data-caption="2024 - Digital Figure Drawing"
+                            data-link=""
+                            data-categories="all digital figure"
+                            alt="Image 1"
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/figure4.jpg"
+                            data-full="miscImg/large/mbPortfigure4.jpg"
+                            data-caption="2024 - Digital Figure Drawing"
+                            data-link=""
+                            data-categories="all digital figure"
+                            alt="Image 1"
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/figure5.jpg"
+                            data-full="miscImg/large/mbPortfigure5.jpg"
+                            data-caption="2024 - Digital Figure Drawing"
+                            data-link=""
+                            data-categories="all digital figure"
+                            alt="Image 1"
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/eyeBorder.jpg"
+                            data-full="miscImg/large/mbPorteyeBorder.jpg"
+                            data-caption="2023 - Digital Illustration"
+                            data-link=""
+                            data-categories="all digital"
+                            alt="Image 1"
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                        <div class="thumb">
+                            <img class="thumbImg"
+                            src="miscImg/thumb/fireFace.jpg"
+                            data-full="miscImg/large/mbPortfireFace.jpg"
+                            data-caption="2023 - Digital Illustration"
+                            data-link=""
+                            data-categories="all digital"
+                            alt="Image 1"
+                            loading="lazy">
+                            <div class="infoOverlay"></div>
+                        </div>
+                    </div>
+                    <div class="preview">
+                        <div class="caption" id="caption"></div>
+                        <a id="projectLink" class="descLink" href="#" target="_blank" style="display: none;">View Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <img id="bigImage" src="" alt="Large Preview" style="display: none;">
+                        <video id="bigVideo" style="display: none;" loop playsinline autoplay>
+                            <source src="" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <!-- <div id="text-images">
                         <h1 id="images" class="miscDesc">Under Construction !!</h1>
                         <p id="main-text" class="miscDesc">Find more on my Instagram <a class="miscLink" href="https://www.instagram.com/glasscutlery/" target="_blank">@glasscutlery</a></p>
                     </div>
-                    <img class="miscGif" src="miscImg/stickGuy.gif" alt="">
+                    <img class="miscGif" src="miscImg/stickGuy.gif" alt=""> -->
                 </div>
             </div>
         </div>
