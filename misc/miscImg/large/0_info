@@ -1,0 +1,18 @@
+/* 
+
+width - 2000px 
+height - whatever
+image - jpg (unless transparent, then png)
+video - mp4 or gif
+
+open folder in terminal
+
+cd /path/to/folder
+
+for f in originalPort/*.png; do
+  filename=$(basename "$f" .png)
+  magick "$f" -resize 2000x -quality 85 "bigPort/${filename}.jpg"
+done
+cp originalPort/*.mp4 bigPort/
+
+ */

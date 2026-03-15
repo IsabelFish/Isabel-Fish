@@ -46,9 +46,9 @@
                     <!-- <li class="page-nav-item">
                         <a href="mailto:isabelfish.png@gmail.com" class="page-nav-link link social" target="_blank"><i class="fa-solid fa-envelope"></i></a>
                     </li> -->
-                    <li class="page-nav-item">
+                    <!-- <li class="page-nav-item">
                         <a href="https://www.linkedin.com/in/isabelfish/" class="page-nav-link link social" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <div id="website-title">
@@ -63,13 +63,35 @@
             <div id="content-div">
                 <div id="content">
                     <div class="aboutDesc">
-                        <p>I'm <span class="italic">Isabel Fish</span>, a graphic designer who dabbles in illustration, web design, painting etc....... </p>
+                        <p>I'm <span class="italic">Isabel Fish</span>, a graphic designer who dabbles in illustration, web design, painting, etc....... </p>
                         
                         <br>
                         <a class="webInfo" href="mailto:isabelfish.png@gmail.com"> isabelfish.png@gmail.com</a>
                         <p class="webInfo">(⁠✷⁠‿⁠✷⁠)</p>
                         <p class="webInfo">Website made by me!</p>
-                        <p class="webInfo">Last edited: /02/26</p>
+                        <p class="webInfo">Last edited: 15/03/26</p>
+                        <br /><br />
+                        <!-- LAST LISTENED TO -->
+                        <hr />
+                        <div class="header__inner">
+                            <p>Last played:</p>
+                            <p><i class="fa-solid fa-music"></i> <span id="song">&#8987;</span></p>
+                            </div>
+                            <div class="header__inner">
+                                <p><small><a class="webInfo" href="https://github.com/biancarosa/lastfm-last-played" target="_blank">powered by biancarosa <i class="fa-solid fa-arrow-up-right-from-square"></i></a></small></p>
+                            </div>
+                            <script type="text/javascript">
+                                let user = 'glasscutlery';
+                                let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
+                                let song = document.querySelector('#song');
+                                fetch(url)
+                                    .then(function (response) {
+                                        return response.json()
+                                    }).then(function (json) {
+                                        song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
+                                    });
+                            </script>
+                        <hr />
                     </div>
                 </div>
             </div>

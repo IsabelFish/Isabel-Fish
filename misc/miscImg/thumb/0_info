@@ -1,0 +1,14 @@
+/*
+
+width - 750px 
+height - whatever
+image - jpg (if transparent add background)
+video - gif
+
+
+for f in originalPort/*.png; do
+  filename=$(basename "$f" .png)
+  magick "$f" -resize 750x -quality 85 "smallPort/${filename}.jpg"
+done 
+
+*/

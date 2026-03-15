@@ -248,6 +248,8 @@ ul {
 
 .index-button {
     padding: 3px 0;
+    white-space: nowrap;
+    text-align: left;
 }
 
 

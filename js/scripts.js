@@ -129,6 +129,9 @@ function showFirstVisibleImage() {
 }
 
 function updatePreview(thumb) {
+  bigVideo.pause();
+  bigVideo.currentTime = 0;
+  
   const type = thumb.dataset.type || 'image';
   const fullSrc = thumb.dataset.full;
   const captionText = thumb.dataset.caption || '';
@@ -197,7 +200,7 @@ document.querySelectorAll('.thumb').forEach(thumb => {
       const linkEl = document.createElement('a');
       linkEl.href = img.dataset.link;
       linkEl.target = "_blank";
-      linkEl.textContent = "View Website";
+      linkEl.textContent = "View";
       overlay.appendChild(linkEl);
     }
 
