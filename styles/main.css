@@ -633,6 +633,7 @@ button {
     font-weight: 400;
     font-style: normal;
     font-size: 13px;
+    white-space: nowrap;
     text-transform: uppercase;
     color: var(--main-colour); 
     top: 0px;
