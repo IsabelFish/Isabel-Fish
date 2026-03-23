@@ -49,8 +49,9 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     background: url("") var(--main-black) repeat;
+    position: relative;
     overflow-y: scroll;
     overflow-x: hidden;
     color: white;
@@ -120,53 +121,63 @@ header {
 /* flowerr */
 
 .nav {
-    position: absolute;
-    top: -110px;
+    position: relative;
+    margin: 30px 0 0 0;
+    padding: 0;
 
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    transform: scale(95%);
-
+    width: 100vw;
+    height: 100vh;
+    transform: scale(100%);
 }
 
-.full-flower {
+#flowerContainer {
+    position: absolute;
+    margin: 0;
+    width: 890px;
+    height: 940px;
+    left: 50%;
+    transform: scale(1) translateX(-50%);
+    transform-origin: top center;
+
+    margin: 0 auto;
+}
+
+/* .full-flower {
     display: flex;
     flex-direction: column;
     max-width: fit-content;
-}
+} */
 
 /* head positioning ?????? */
 
 #flower1 {
     position: absolute;
-    margin-bottom: 890px;
-    margin-left: 360px;
+    top: 50px;
+    right: 0px;
 }
 
 #flower2 {
     position: absolute;
-    margin-top: -50px;
-    margin-right: 405px;
+    top: 0px;
+    left: 0px;
 }
 
 #flower3 {
     position: absolute;
-    margin-top: 210px;
-    margin-right: 541px;
+    top: 260px;
+    left: 0px;
 }
 
 #flower4 {
     position: absolute;
-    margin-top: 550px;
-    margin-left: 100px;
+    bottom: 0px;
+    left: 180px;
 }
 
 /* name */ 
 .flowerhead-link {
+    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,6 +187,7 @@ header {
 }
 
 .nav-button {
+    position: relative;
     z-index: 3;
     border-radius: 100px;
     color: var(--main-white);
@@ -190,26 +202,26 @@ header {
 }
 
 #link1 {
-    position: relative;
-    top: 230px;
-    right: 90px;
+    position: absolute;
+    top: 40px;
+    left: -100px;
 }
 
 #link2 {
-    position: relative;
-    top: 450px;
+    position: absolute;
+    top: 250px;
     left: 415px;
 }
 
 #link3 {
-    position: relative;
-    top: 350px;
+    position: absolute;
+    top: 140px;
     left: 260px;
 }
 
 #link4 {
-    position: relative;
-    top: 170px;
+    position: absolute;
+    top: -40px;
     left: 250px;
 }
 
@@ -218,6 +230,8 @@ header {
 .flower-head {
     z-index: 2;
     position: relative;
+    top: 0;
+    left: 0;
     height: 200px;
     width: 200px;
     border-radius: 100px;
@@ -225,7 +239,7 @@ header {
 }
 
 #head1 {
-    position: fixed;
+    position: absolute;
     border-radius: 100px;
 
     animation-name: flower1;
@@ -235,7 +249,7 @@ header {
 }
 
 #head2 {
-    position: fixed;
+    position: absolute;
 
     animation-name: flower2;
     animation-duration: 60s;
@@ -244,7 +258,7 @@ header {
 }
 
 #head3 {
-    position: fixed;
+    position: absolute;
 
     animation-name: flower3;
     animation-duration: 45s;
@@ -253,7 +267,7 @@ header {
 }
 
 #head4 {
-    position: fixed;
+    position: absolute;
 
 
     animation-name: flower4;
@@ -333,22 +347,22 @@ footer {
 }
 
 @media (max-width: 600px) and (max-height: 860px) {
-    .nav {
-        transform: scale(80%);
-        top: -140px;
+    #flowerContainer {
+        transform: scale(0.9) translateX(-55%);
+        /* top: -140px; */
     }
 }
 
 @media (max-width: 300px) {
-    .nav {
-        transform: scale(80%);
-        top: calc(-100px +10%);
+    #flowerContainer {
+        transform: scale(0.7) translateX(-70%);
+        /* top: calc(-100px +10%); */
     }
 }
 
 @media (max-width: 300px) and (max-height: 860px) {
-    .nav {
-        transform: scale(60%);
-        top: -140px;
+    #flowerContainer {
+        transform: scale(0.7) translateX(-70%);
+        /* top: -140px; */
     }
 }
