@@ -346,6 +346,43 @@ footer {
     pointer-events:none;
 }
 
+/* 404.................. */
+
+#four04 {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    transform: translate(-50%);
+    align-items: center;
+    text-align: center;
+}
+#four04Head {
+    position: relative;
+    margin-top: 0;
+    color: var(--main-colour);
+    font-size: 15rem;
+    font-family:  "Spline Sans Mono", sans-serif;
+    font-weight: 100;
+}
+.fourText {
+    color: grey;
+    font-family:  "Spline Sans Mono", sans-serif;
+    position: relative;
+    margin-top: -150px;
+}
+#four04Home {
+    text-decoration: underline;
+    cursor: pointer;
+}
+#four04Home:hover {
+    color: var(--main-colour);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
 @media (max-width: 600px) and (max-height: 860px) {
     #flowerContainer {
         transform: scale(0.9) translateX(-55%);
@@ -353,10 +390,26 @@ footer {
     }
 }
 
+@media (max-width: 500px) {
+    #four04Head {
+        font-size: 10rem;
+    }
+    .fourText {
+        margin-top: -100px;
+    }
+}
+
 @media (max-width: 300px) {
     #flowerContainer {
         transform: scale(0.7) translateX(-70%);
         /* top: calc(-100px +10%); */
+    }
+    #four04Head {
+        font-size: 7rem;
+    }
+    .fourText {
+        margin-top: -60px;
+        font-size: 0.8rem;
     }
 }
 
